@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #DFF6FF;
+    --btn-color: #47B5FF;
+}
+body{
+    background-color: var(--bg-color);
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#credit__card{
+    background-color: white;
+    min-width: 450px;
+    min-height: 300px;
+    border-radius: 8px;
+    padding: 36px;
+    box-shadow: 0 0.25rem 0.5rem #06283D;
+}
+
+.img__credit img{
+    width: 80px;
+}
+
+.input__wrapper{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input__wrapper label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    transition: all 0.5s linear;
+}
+
+.input__wrapper input{
+    height: 52px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #06283D;
+    outline: none;
+    transition: all 0.5s linear;
+    font-size: 1rem;
+    padding: 16px 0 0;
+}
+
+.input__wrapper input:focus ~ label,
+.input__wrapper input:valid ~ label{
+    top: -10px;
+    left: 0;
+    font-size: 1rem;
+}
+
+.err-number,
+.err-name{
+    color: #EB455F;
+}
+.img__credit{
+    margin-bottom: 24px;
+}
+.submit{
+    margin: auto;
+    display: block;
+    padding: 12px 0px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background-color: #1363DF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.5s linear;
+}
+
+@media screen and (max-width: 767px) {
+    #credit__card{
+        min-width: 85%;
+        min-height: auto;
+    }
+}

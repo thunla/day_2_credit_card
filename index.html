@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - Credit card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" role="main">
+        <form id="credit__card">
+            <div class="img__credit">
+                <img src="/icon-visa.png" />
+            </div>
+            <div class="input__wrapper">
+                <input type="text" name="number" class="number" placeholder="0000-0000-0000-0000" maxlength="16" required="" />
+                <label>Card Number</label>
+                <span class="err-number"></span>
+            </div>
+            <div class="input__wrapper">
+                <input type="text" class="name" name="name"  required="" value="" />
+                <label>Card Holder</label>
+                <span class="err-name"></span>
+            </div>
+            <div class="input__wrapper">
+                <input type="month" class="expiration" name="expiration" required="" />
+                <label>Expiration</label>
+            </div>
+            <div class="input__wrapper">
+                <input type="password" name="cvv" placeholder="000" class="cvv" maxlength="3" required="" />
+                <label for="">CVV</label>
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="main."></script>
+</html>
